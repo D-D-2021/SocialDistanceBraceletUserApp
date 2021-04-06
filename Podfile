@@ -7,4 +7,6 @@ target 'SocialDistanceBracelet' do
   pod 'TextFieldEffects', '~> 1.6'
   pod 'ProgressHUD'
   pod 'Eureka', '~> 5.3.3'
+  pod 'QRCodeReader.swift'
+  pod 'QRCode'
 end

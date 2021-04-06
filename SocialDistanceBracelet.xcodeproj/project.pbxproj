@@ -16,6 +16,8 @@
 		E696C74B26150F2900FD72FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E696C74926150F2900FD72FF /* LaunchScreen.storyboard */; };
 		E69B33B926168E9400E526D0 /* BraceletActivationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69B33B826168E9400E526D0 /* BraceletActivationViewController.swift */; };
 		E6A9E8B32616A6FF00FDFE3F /* UserFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A9E8B22616A6FF00FDFE3F /* UserFormViewController.swift */; };
+		E6ABD920261BDC68006E4AE4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ABD91F261BDC68006E4AE4 /* SettingsViewController.swift */; };
+		E6ABD924261BDC84006E4AE4 /* PodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ABD923261BDC84006E4AE4 /* PodViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		E696C74C26150F2900FD72FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E69B33B826168E9400E526D0 /* BraceletActivationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BraceletActivationViewController.swift; sourceTree = "<group>"; };
 		E6A9E8B22616A6FF00FDFE3F /* UserFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFormViewController.swift; sourceTree = "<group>"; };
+		E6ABD91F261BDC68006E4AE4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		E6ABD923261BDC84006E4AE4 /* PodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,17 +79,27 @@
 		E696C73D26150F2500FD72FF /* SocialDistanceBracelet */ = {
 			isa = PBXGroup;
 			children = (
+				E6ABD922261BDC70006E4AE4 /* ViewControllers */,
 				E696C73E26150F2500FD72FF /* AppDelegate.swift */,
 				E696C74026150F2500FD72FF /* SceneDelegate.swift */,
 				E696C74226150F2500FD72FF /* ViewController.swift */,
-				E69B33B826168E9400E526D0 /* BraceletActivationViewController.swift */,
-				E6A9E8B22616A6FF00FDFE3F /* UserFormViewController.swift */,
 				E696C74426150F2500FD72FF /* Main.storyboard */,
 				E696C74726150F2900FD72FF /* Assets.xcassets */,
 				E696C74926150F2900FD72FF /* LaunchScreen.storyboard */,
 				E696C74C26150F2900FD72FF /* Info.plist */,
 			);
 			path = SocialDistanceBracelet;
+			sourceTree = "<group>";
+		};
+		E6ABD922261BDC70006E4AE4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E69B33B826168E9400E526D0 /* BraceletActivationViewController.swift */,
+				E6A9E8B22616A6FF00FDFE3F /* UserFormViewController.swift */,
+				E6ABD91F261BDC68006E4AE4 /* SettingsViewController.swift */,
+				E6ABD923261BDC84006E4AE4 /* PodViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		ECD72C3FC4C836AEF90AA134 /* Pods */ = {
@@ -214,8 +228,10 @@
 				E69B33B926168E9400E526D0 /* BraceletActivationViewController.swift in Sources */,
 				E696C74326150F2500FD72FF /* ViewController.swift in Sources */,
 				E696C73F26150F2500FD72FF /* AppDelegate.swift in Sources */,
+				E6ABD924261BDC84006E4AE4 /* PodViewController.swift in Sources */,
 				E696C74126150F2500FD72FF /* SceneDelegate.swift in Sources */,
 				E6A9E8B32616A6FF00FDFE3F /* UserFormViewController.swift in Sources */,
+				E6ABD920261BDC68006E4AE4 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

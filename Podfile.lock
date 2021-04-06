@@ -1,0 +1,32 @@
+PODS:
+  - Eureka (5.3.3)
+  - ProgressHUD (13.5)
+  - QRCode (2.0)
+  - QRCodeReader.swift (10.1.0)
+  - TextFieldEffects (1.6.0)
+
+DEPENDENCIES:
+  - Eureka (~> 5.3.3)
+  - ProgressHUD
+  - QRCode
+  - QRCodeReader.swift
+  - TextFieldEffects (~> 1.6)
+
+SPEC REPOS:
+  trunk:
+    - Eureka
+    - ProgressHUD
+    - QRCode
+    - QRCodeReader.swift
+    - TextFieldEffects
+
+SPEC CHECKSUMS:
+  Eureka: e6d720290c56bb23333ad1a0e020b2a98a0e9a43
+  ProgressHUD: 028e3828c7b582022c34a74604fc6073f8628d99
+  QRCode: f98a1886c8f37523704a7512a4c0cd45b34c18a4
+  QRCodeReader.swift: 373a389fe9a22d513c879a32a6f647c58f4ef572
+  TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
+
+PODFILE CHECKSUM: 45070569dbbcdf3fd2a92bf0316ea18cb42cc612
+
+COCOAPODS: 1.10.1

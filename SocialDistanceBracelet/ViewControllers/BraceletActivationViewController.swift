@@ -44,7 +44,7 @@ class BraceletActivationViewController: UIViewController {
     @objc func nextScreen() {
         print("Next")
         
-        let formView = storyboard?.instantiateViewController(identifier: "formView")
+        let formView = storyboard?.instantiateViewController(identifier: "tabBarController")
         self.present(formView!, animated: true, completion: nil)
     }
     
