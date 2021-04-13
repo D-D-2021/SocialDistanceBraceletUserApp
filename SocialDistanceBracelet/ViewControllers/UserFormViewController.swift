@@ -27,6 +27,7 @@ class UserFormViewController: FormViewController {
                         $0.title = "Email"
                         $0.placeholder = "Enter Email"
                     }
+
                 +++ Section("")
                     <<< ButtonRow(){
                         $0.title = "Submit"

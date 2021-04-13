@@ -8,22 +8,78 @@
 import UIKit
 import TextFieldEffects
 import ProgressHUD
+import AVFoundation
 
-class BraceletActivationViewController: UIViewController {
+class BraceletActivationViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
 
+    @IBOutlet weak var videoPreviewView: UIView!
     @IBOutlet weak var braceletImage: UIImageView!
     @IBOutlet weak var idTextField: UITextField!
-    
+    var captureSession:AVCaptureSession?
+    var capturePhotoOutput:AVCapturePhotoOutput?
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        var videoLayer = AVCaptureVideoPreviewLayer()
 
         // Do any additional setup after loading the view.
         ProgressHUD.animationType = .multipleCircleScaleRipple
         ProgressHUD.colorHUD = .white
         
+        guard let captureDevice = AVCaptureDevice.default(for: AVMediaType.video) else {
+            return
+        }
+        
+        do {
+            let input = try AVCaptureDeviceInput(device: captureDevice)
+            
+            captureSession = AVCaptureSession()
+            
+            captureSession?.addInput(input)
+            capturePhotoOutput = AVCapturePhotoOutput()
+            capturePhotoOutput?.isHighResolutionCaptureEnabled = true
+            captureSession?.addOutput(capturePhotoOutput!)
+            
+            captureSession?.sessionPreset = .high
+            
+            let captureMetadataOutput = AVCaptureMetadataOutput()
+            captureSession?.addOutput(captureMetadataOutput)
+            captureMetadataOutput.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
+            captureMetadataOutput.metadataObjectTypes = [AVMetadataObject.ObjectType.qr]
+            
+            videoLayer = AVCaptureVideoPreviewLayer(session: captureSession!)
+            videoLayer.videoGravity = .resizeAspectFill
+            videoLayer.frame = videoPreviewView.layer.bounds
+            
+            videoPreviewView.layer.addSublayer(videoLayer)
+            
+            captureSession?.startRunning()
+        }
+        
+        catch {
+            print(error)
+            return
+        }
+        
+    }
+    
+    func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
+        if metadataObjects.count == 0 {
+            return;
+        }
+        
+        let metadataObj = metadataObjects[0] as! AVMetadataMachineReadableCodeObject
+        
+        if metadataObj.type == .qr {
+            if let outputString = metadataObj.stringValue {
+                print(outputString)
+                activateWithId(id: outputString)
+            }
+        }
     }
     
     @IBAction func braceletIdDone(_ sender: Any) {
@@ -32,6 +88,12 @@ class BraceletActivationViewController: UIViewController {
     }
     
     @IBAction func activate(_ sender: Any) {
+        activateWithId(id: idTextField.text ?? "")
+    }
+    
+    func activateWithId(id: String) {
+        captureSession?.stopRunning()
+        videoPreviewView.isHidden = true
         ProgressHUD.show()
         perform(#selector(moveForwards), with: nil, afterDelay: 2)
     }

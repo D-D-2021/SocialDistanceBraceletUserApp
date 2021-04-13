@@ -49,6 +49,14 @@
                                     <action selector="activate:" destination="OwO-bc-Zyd" eventType="touchUpInside" id="Vko-MY-sAJ"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mzu-tq-QYa">
+                                <rect key="frame" x="145" y="386" width="124" height="124"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="124" id="5XB-eq-Qua"/>
+                                    <constraint firstAttribute="width" constant="124" id="edO-M8-wzw"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AWx-9p-fzd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -60,8 +68,10 @@
                             <constraint firstItem="zFT-bM-PQB" firstAttribute="top" secondItem="kXA-Gg-dnc" secondAttribute="top" id="CK1-L0-JKB"/>
                             <constraint firstItem="9tU-hX-Rxq" firstAttribute="centerX" secondItem="kXA-Gg-dnc" secondAttribute="centerX" id="GxZ-4Z-WJQ"/>
                             <constraint firstItem="9tU-hX-Rxq" firstAttribute="top" secondItem="gzF-d5-AbB" secondAttribute="bottom" constant="40" id="L5j-8P-X2M"/>
+                            <constraint firstItem="Mzu-tq-QYa" firstAttribute="centerY" secondItem="kXA-Gg-dnc" secondAttribute="centerY" id="N9d-Jc-wof"/>
                             <constraint firstItem="Oeh-3V-5SV" firstAttribute="centerX" secondItem="kXA-Gg-dnc" secondAttribute="centerX" id="PS8-Qv-tXj"/>
                             <constraint firstItem="zFT-bM-PQB" firstAttribute="leading" secondItem="AWx-9p-fzd" secondAttribute="leading" id="lzA-kC-Ru4"/>
+                            <constraint firstItem="Mzu-tq-QYa" firstAttribute="centerX" secondItem="kXA-Gg-dnc" secondAttribute="centerX" id="mPX-mi-jkX"/>
                             <constraint firstItem="AWx-9p-fzd" firstAttribute="bottom" secondItem="Oeh-3V-5SV" secondAttribute="bottom" constant="70" id="mRi-A5-OIJ"/>
                             <constraint firstAttribute="bottom" secondItem="zFT-bM-PQB" secondAttribute="bottom" id="paH-R3-uTf"/>
                             <constraint firstItem="gzF-d5-AbB" firstAttribute="centerX" secondItem="kXA-Gg-dnc" secondAttribute="centerX" id="tdw-xs-AQR"/>
@@ -71,35 +81,79 @@
                     <connections>
                         <outlet property="braceletImage" destination="gHl-Bo-02m" id="01l-9T-1CS"/>
                         <outlet property="idTextField" destination="9tU-hX-Rxq" id="Noy-Oj-Tpn"/>
+                        <outlet property="videoPreviewView" destination="Mzu-tq-QYa" id="LuB-9j-Vqx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mZW-cu-g3a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="986.95652173913049" y="77.678571428571431"/>
         </scene>
-        <!--Pod-->
+        <!--Your Pod-->
         <scene sceneID="i2D-8J-FXi">
             <objects>
-                <viewController storyboardIdentifier="formView" modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vcw-kD-jPk" customClass="UserFormViewController" customModule="SocialDistanceBracelet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="formView" modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vcw-kD-jPk" customClass="PodViewController" customModule="SocialDistanceBracelet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jo5-Aa-oIm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xqt-pV-37w">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="podMember" id="loK-rb-2TH" customClass="PodMemberTableViewCell" customModule="SocialDistanceBracelet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="loK-rb-2TH" id="DbQ-Dd-MpU">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugX-bz-ky2">
+                                                    <rect key="frame" x="20" y="11" width="365" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Label">
+                                                            <attributes>
+                                                                <font key="NSFont" size="17" name="AmericanTypewriter-Bold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="weirdLabel" destination="ugX-bz-ky2" id="fS3-3P-MFc"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="vcw-kD-jPk" id="fe3-mV-OO6"/>
+                                    <outlet property="delegate" destination="vcw-kD-jPk" id="BXj-gH-M2H"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="S9g-bq-5Ef"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xqt-pV-37w" firstAttribute="bottom" secondItem="S9g-bq-5Ef" secondAttribute="bottom" id="P4D-ne-0JN"/>
+                            <constraint firstItem="S9g-bq-5Ef" firstAttribute="trailing" secondItem="xqt-pV-37w" secondAttribute="trailing" id="Sia-Ta-cDe"/>
+                            <constraint firstItem="xqt-pV-37w" firstAttribute="leading" secondItem="S9g-bq-5Ef" secondAttribute="leading" id="Ssl-0O-IF0"/>
+                            <constraint firstItem="xqt-pV-37w" firstAttribute="top" secondItem="S9g-bq-5Ef" secondAttribute="top" id="aKV-px-vXZ"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Pod" id="dHS-KM-MO4">
-                        <imageReference key="image" image="person.3.fill" catalog="system" symbolScale="large"/>
-                        <imageReference key="selectedImage" image="person.3.fill" catalog="system" symbolScale="large"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" title="Your Pod" id="IGC-Rk-Ue2"/>
+                    <connections>
+                        <outlet property="tableView" destination="xqt-pV-37w" id="ZgX-1k-ggB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sAb-pS-6WF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2878" y="78"/>
+            <point key="canvasLocation" x="3786.9565217391309" y="77.678571428571431"/>
         </scene>
         <!--Settings-->
         <scene sceneID="Tfu-J6-hB9">
             <objects>
-                <viewController id="NCO-wd-Nkf" sceneMemberID="viewController">
+                <viewController id="NCO-wd-Nkf" customClass="UserFormViewController" customModule="SocialDistanceBracelet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b2s-0M-Oop">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,6 +164,7 @@
                         <imageReference key="image" image="gear" catalog="system" symbolScale="large"/>
                         <imageReference key="selectedImage" image="gear" catalog="system" symbolScale="large"/>
                     </tabBarItem>
+                    <navigationItem key="navigationItem" id="sfk-Dp-3Ew"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j3G-4c-gcN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -142,13 +197,35 @@
                     </tabBar>
                     <connections>
                         <segue destination="gYs-Wm-OOD" kind="relationship" relationship="viewControllers" id="6Wh-wp-1D8"/>
-                        <segue destination="vcw-kD-jPk" kind="relationship" relationship="viewControllers" id="DNn-Xg-uP7"/>
+                        <segue destination="NUo-al-b9O" kind="relationship" relationship="viewControllers" id="DNn-Xg-uP7"/>
                         <segue destination="NCO-wd-Nkf" kind="relationship" relationship="viewControllers" id="dGk-17-rT3"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TeH-s3-gcz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1942" y="78"/>
+        </scene>
+        <!--Pod-->
+        <scene sceneID="LNv-Ia-Ubv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NUo-al-b9O" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Pod" id="dHS-KM-MO4">
+                        <imageReference key="image" image="person.3.fill" catalog="system" symbolScale="large"/>
+                        <imageReference key="selectedImage" image="person.3.fill" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Uha-eo-Wbv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vcw-kD-jPk" kind="relationship" relationship="rootViewController" id="Ob7-ot-4ys"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pSu-Ff-2dF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2876.811594202899" y="77.678571428571431"/>
         </scene>
     </scenes>
     <resources>

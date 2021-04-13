@@ -8,5 +8,5 @@ target 'SocialDistanceBracelet' do
   pod 'ProgressHUD'
   pod 'Eureka', '~> 5.3.3'
   pod 'QRCodeReader.swift'
-  pod 'QRCode'
+  pod 'PostalAddressRow'
 end
