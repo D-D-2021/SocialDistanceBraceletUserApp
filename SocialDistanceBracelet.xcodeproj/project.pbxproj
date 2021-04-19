@@ -18,6 +18,9 @@
 		E6A9E8B32616A6FF00FDFE3F /* UserFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A9E8B22616A6FF00FDFE3F /* UserFormViewController.swift */; };
 		E6ABD920261BDC68006E4AE4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ABD91F261BDC68006E4AE4 /* SettingsViewController.swift */; };
 		E6ABD924261BDC84006E4AE4 /* PodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ABD923261BDC84006E4AE4 /* PodViewController.swift */; };
+		E6C6507A26253B1B00AB2F10 /* PodQRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C6507926253B1B00AB2F10 /* PodQRScannerView.swift */; };
+		E6D4468A26236CD100A20E7E /* PodMemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D4468926236CD100A20E7E /* PodMemberTableViewCell.swift */; };
+		E6D4469B2623747F00A20E7E /* QRShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D4469A2623747F00A20E7E /* QRShowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		E6A9E8B22616A6FF00FDFE3F /* UserFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFormViewController.swift; sourceTree = "<group>"; };
 		E6ABD91F261BDC68006E4AE4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E6ABD923261BDC84006E4AE4 /* PodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodViewController.swift; sourceTree = "<group>"; };
+		E6C6507926253B1B00AB2F10 /* PodQRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodQRScannerView.swift; sourceTree = "<group>"; };
+		E6D4468926236CD100A20E7E /* PodMemberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodMemberTableViewCell.swift; sourceTree = "<group>"; };
+		E6D4469A2623747F00A20E7E /* QRShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRShowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 		E696C73D26150F2500FD72FF /* SocialDistanceBracelet */ = {
 			isa = PBXGroup;
 			children = (
+				E6D4468C26236EBB00A20E7E /* Views */,
 				E6ABD922261BDC70006E4AE4 /* ViewControllers */,
 				E696C73E26150F2500FD72FF /* AppDelegate.swift */,
 				E696C74026150F2500FD72FF /* SceneDelegate.swift */,
@@ -100,6 +107,16 @@
 				E6ABD923261BDC84006E4AE4 /* PodViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E6D4468C26236EBB00A20E7E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E6D4468926236CD100A20E7E /* PodMemberTableViewCell.swift */,
+				E6D4469A2623747F00A20E7E /* QRShowView.swift */,
+				E6C6507926253B1B00AB2F10 /* PodQRScannerView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		ECD72C3FC4C836AEF90AA134 /* Pods */ = {
@@ -227,9 +244,12 @@
 			files = (
 				E69B33B926168E9400E526D0 /* BraceletActivationViewController.swift in Sources */,
 				E696C74326150F2500FD72FF /* ViewController.swift in Sources */,
+				E6C6507A26253B1B00AB2F10 /* PodQRScannerView.swift in Sources */,
+				E6D4469B2623747F00A20E7E /* QRShowView.swift in Sources */,
 				E696C73F26150F2500FD72FF /* AppDelegate.swift in Sources */,
 				E6ABD924261BDC84006E4AE4 /* PodViewController.swift in Sources */,
 				E696C74126150F2500FD72FF /* SceneDelegate.swift in Sources */,
+				E6D4468A26236CD100A20E7E /* PodMemberTableViewCell.swift in Sources */,
 				E6A9E8B32616A6FF00FDFE3F /* UserFormViewController.swift in Sources */,
 				E6ABD920261BDC68006E4AE4 /* SettingsViewController.swift in Sources */,
 			);
@@ -380,6 +400,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8LXUHX8P5Z;
 				INFOPLIST_FILE = SocialDistanceBracelet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -399,6 +420,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8LXUHX8P5Z;
 				INFOPLIST_FILE = SocialDistanceBracelet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

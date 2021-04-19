@@ -99,15 +99,17 @@ class BraceletActivationViewController: UIViewController, AVCaptureMetadataOutpu
     }
     
     @objc func moveForwards() {
-        ProgressHUD.showSuccess()
+        ProgressHUD.show("Welcome! Please fill out your data.", icon: .succeed, interaction: false)
         perform(#selector(nextScreen), with: nil, afterDelay: 1)
+        UserDefaults.standard.setValue(true, forKey: "activated")
     }
     
     @objc func nextScreen() {
         print("Next")
         
-        let formView = storyboard?.instantiateViewController(identifier: "tabBarController")
-        self.present(formView!, animated: true, completion: nil)
+        let formView = storyboard!.instantiateViewController(identifier: "tabBarController") as! UITabBarController
+        formView.selectedIndex = 2
+        self.present(formView, animated: true, completion: nil)
     }
     
     /*

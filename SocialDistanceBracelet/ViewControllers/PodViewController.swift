@@ -16,6 +16,7 @@ class PodViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     var qrScannerView:PodQRScannerView?
     
     var userPodsMembers = [String]()
+    let knownUsers:[String:String] = ["DIST:01":"Aryeh Greenberg", "DIST:02":"Rebecca Kim", "DIST:03":"David Lau", "DIST:04":"Michael Matlin","DIST:05":"Anusha Nagar","DIST:06":"Sibhithirumeni Ramadoss"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -120,7 +121,12 @@ class PodViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     func addUserWithData(data:String) {
         hideQRScannerView()
         
-        userPodsMembers.append(data)
+        let userName = knownUsers[data]
+        if userName == nil {
+            ProgressHUD.showError("Unknown User Id", image: nil, interaction: false)
+            return
+        }
+        userPodsMembers.append(userName!)
         
         ProgressHUD.show()
         perform(#selector(completeUserAddition), with: nil, afterDelay: 2)

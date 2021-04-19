@@ -27,6 +27,10 @@ class UserFormViewController: FormViewController {
                         $0.title = "Email"
                         $0.placeholder = "Enter Email"
                     }
+            
+                    <<< SwitchRow() {
+                        $0.title = "Notify on contact trace"
+                    }
 
                 +++ Section("")
                     <<< ButtonRow(){
