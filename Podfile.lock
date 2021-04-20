@@ -1,5 +1,6 @@
 PODS:
   - Eureka (5.3.3)
+  - OneSignal (3.4.1)
   - PostalAddressRow (2.2.0):
     - Eureka (~> 5.0)
   - ProgressHUD (13.5)
@@ -8,6 +9,7 @@ PODS:
 
 DEPENDENCIES:
   - Eureka (~> 5.3.3)
+  - OneSignal
   - PostalAddressRow
   - ProgressHUD
   - QRCodeReader.swift
@@ -16,6 +18,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Eureka
+    - OneSignal
     - PostalAddressRow
     - ProgressHUD
     - QRCodeReader.swift
@@ -23,11 +26,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Eureka: e6d720290c56bb23333ad1a0e020b2a98a0e9a43
+  OneSignal: 546f5d10df7277dd271a1c4cde80646167d55cc3
   PostalAddressRow: 00b1ee182a0fcb741f5f7ea4a91b6fd59de9083d
   ProgressHUD: 028e3828c7b582022c34a74604fc6073f8628d99
   QRCodeReader.swift: 373a389fe9a22d513c879a32a6f647c58f4ef572
   TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
 
-PODFILE CHECKSUM: 034a50d6947e0304c93a3005650d97e3e6940806
+PODFILE CHECKSUM: b235adbef48d40381ba3e9ca91b576d9cddf107a
 
 COCOAPODS: 1.10.1

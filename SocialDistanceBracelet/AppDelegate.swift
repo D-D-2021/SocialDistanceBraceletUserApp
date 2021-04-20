@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import OneSignal
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +15,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // Remove this method to stop OneSignal Debugging
+         OneSignal.setLogLevel(.LL_VERBOSE, visualLevel: .LL_NONE)
+
+         // OneSignal initialization
+         OneSignal.initWithLaunchOptions(launchOptions)
+         OneSignal.setAppId("82e9675f-ecce-4b7d-80c6-127232c37066")
+
+         // promptForPushNotifications will show the native iOS notification permission prompt.
+         // We recommend removing the following code and instead using an In-App Message to prompt for notification permission (See step 8)
+         OneSignal.promptForPushNotifications(userResponse: { accepted in
+           print("User accepted notifications: \(accepted)")
+         })
         return true
     }
 

@@ -10,3 +10,8 @@ target 'SocialDistanceBracelet' do
   pod 'QRCodeReader.swift'
   pod 'PostalAddressRow'
 end
+
+target 'OneSignalNotificationServiceExtension' do
+  use_frameworks!
+  pod 'OneSignal'
+end

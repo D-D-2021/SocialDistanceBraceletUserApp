@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0FC50DD7987839BA7D480A77 /* Pods_SocialDistanceBracelet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F8D18C3B4956930A221A17 /* Pods_SocialDistanceBracelet.framework */; };
+		930B9B10E4A192F7EF6B7FD2 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E384B35D33C9B40422BACF3 /* Pods_OneSignalNotificationServiceExtension.framework */; };
 		E696C73F26150F2500FD72FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E696C73E26150F2500FD72FF /* AppDelegate.swift */; };
 		E696C74126150F2500FD72FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E696C74026150F2500FD72FF /* SceneDelegate.swift */; };
 		E696C74326150F2500FD72FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E696C74226150F2500FD72FF /* ViewController.swift */; };
@@ -19,14 +20,43 @@
 		E6ABD920261BDC68006E4AE4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ABD91F261BDC68006E4AE4 /* SettingsViewController.swift */; };
 		E6ABD924261BDC84006E4AE4 /* PodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ABD923261BDC84006E4AE4 /* PodViewController.swift */; };
 		E6C546F8262E65A6006441EE /* SyncViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C546F7262E65A6006441EE /* SyncViewController.swift */; };
+		E6C54707262E7EDC006441EE /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C54706262E7EDC006441EE /* NotificationService.swift */; };
+		E6C5470B262E7EDC006441EE /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E6C54704262E7EDC006441EE /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E6C6507A26253B1B00AB2F10 /* PodQRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C6507926253B1B00AB2F10 /* PodQRScannerView.swift */; };
 		E6D4468A26236CD100A20E7E /* PodMemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D4468926236CD100A20E7E /* PodMemberTableViewCell.swift */; };
 		E6D4469B2623747F00A20E7E /* QRShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D4469A2623747F00A20E7E /* QRShowView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E6C54709262E7EDC006441EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E696C73326150F2500FD72FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6C54703262E7EDC006441EE;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E6C5470F262E7EDC006441EE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E6C5470B262E7EDC006441EE /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0080276AD9EAB03D12832CF2 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		2510AB5AB30C0E473914CFF5 /* Pods-SocialDistanceBracelet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialDistanceBracelet.debug.xcconfig"; path = "Target Support Files/Pods-SocialDistanceBracelet/Pods-SocialDistanceBracelet.debug.xcconfig"; sourceTree = "<group>"; };
+		8E384B35D33C9B40422BACF3 /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A801544F202A9A53DBBBA6B1 /* Pods-SocialDistanceBracelet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialDistanceBracelet.release.xcconfig"; path = "Target Support Files/Pods-SocialDistanceBracelet/Pods-SocialDistanceBracelet.release.xcconfig"; sourceTree = "<group>"; };
+		B0F922D6303E92973E284D17 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		E2F8D18C3B4956930A221A17 /* Pods_SocialDistanceBracelet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialDistanceBracelet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E696C73B26150F2500FD72FF /* SocialDistanceBracelet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialDistanceBracelet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E696C73E26150F2500FD72FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +71,10 @@
 		E6ABD91F261BDC68006E4AE4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E6ABD923261BDC84006E4AE4 /* PodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodViewController.swift; sourceTree = "<group>"; };
 		E6C546F7262E65A6006441EE /* SyncViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncViewController.swift; sourceTree = "<group>"; };
+		E6C54704262E7EDC006441EE /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6C54706262E7EDC006441EE /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		E6C54708262E7EDC006441EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6C54727262E7FFD006441EE /* SocialDistanceBracelet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SocialDistanceBracelet.entitlements; sourceTree = "<group>"; };
 		E6C6507926253B1B00AB2F10 /* PodQRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodQRScannerView.swift; sourceTree = "<group>"; };
 		E6D4468926236CD100A20E7E /* PodMemberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodMemberTableViewCell.swift; sourceTree = "<group>"; };
 		E6D4469A2623747F00A20E7E /* QRShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRShowView.swift; sourceTree = "<group>"; };
@@ -55,6 +89,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E6C54701262E7EDC006441EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				930B9B10E4A192F7EF6B7FD2 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -62,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				E2F8D18C3B4956930A221A17 /* Pods_SocialDistanceBracelet.framework */,
+				8E384B35D33C9B40422BACF3 /* Pods_OneSignalNotificationServiceExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -70,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				E696C73D26150F2500FD72FF /* SocialDistanceBracelet */,
+				E6C54705262E7EDC006441EE /* OneSignalNotificationServiceExtension */,
 				E696C73C26150F2500FD72FF /* Products */,
 				ECD72C3FC4C836AEF90AA134 /* Pods */,
 				1B552C21AA711F702BD39DE4 /* Frameworks */,
@@ -80,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				E696C73B26150F2500FD72FF /* SocialDistanceBracelet.app */,
+				E6C54704262E7EDC006441EE /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,6 +132,7 @@
 		E696C73D26150F2500FD72FF /* SocialDistanceBracelet */ = {
 			isa = PBXGroup;
 			children = (
+				E6C54727262E7FFD006441EE /* SocialDistanceBracelet.entitlements */,
 				E6D4468C26236EBB00A20E7E /* Views */,
 				E6ABD922261BDC70006E4AE4 /* ViewControllers */,
 				E696C73E26150F2500FD72FF /* AppDelegate.swift */,
@@ -112,6 +158,15 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		E6C54705262E7EDC006441EE /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				E6C54706262E7EDC006441EE /* NotificationService.swift */,
+				E6C54708262E7EDC006441EE /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
 		E6D4468C26236EBB00A20E7E /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +182,8 @@
 			children = (
 				2510AB5AB30C0E473914CFF5 /* Pods-SocialDistanceBracelet.debug.xcconfig */,
 				A801544F202A9A53DBBBA6B1 /* Pods-SocialDistanceBracelet.release.xcconfig */,
+				0080276AD9EAB03D12832CF2 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				B0F922D6303E92973E284D17 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -143,15 +200,35 @@
 				E696C73826150F2500FD72FF /* Frameworks */,
 				E696C73926150F2500FD72FF /* Resources */,
 				D357BC7DF832E49131E14903 /* [CP] Embed Pods Frameworks */,
+				E6C5470F262E7EDC006441EE /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E6C5470A262E7EDC006441EE /* PBXTargetDependency */,
 			);
 			name = SocialDistanceBracelet;
 			productName = SocialDistanceBracelet;
 			productReference = E696C73B26150F2500FD72FF /* SocialDistanceBracelet.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E6C54703262E7EDC006441EE /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6C5470C262E7EDC006441EE /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				6EE878621702B6B9C13E4FBE /* [CP] Check Pods Manifest.lock */,
+				E6C54700262E7EDC006441EE /* Sources */,
+				E6C54701262E7EDC006441EE /* Frameworks */,
+				E6C54702262E7EDC006441EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = E6C54704262E7EDC006441EE /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -163,6 +240,9 @@
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					E696C73A26150F2500FD72FF = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					E6C54703262E7EDC006441EE = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -181,6 +261,7 @@
 			projectRoot = "";
 			targets = (
 				E696C73A26150F2500FD72FF /* SocialDistanceBracelet */,
+				E6C54703262E7EDC006441EE /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -196,9 +277,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E6C54702262E7EDC006441EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6EE878621702B6B9C13E4FBE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D357BC7DF832E49131E14903 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -259,7 +369,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E6C54700262E7EDC006441EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6C54707262E7EDC006441EE /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E6C5470A262E7EDC006441EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6C54703262E7EDC006441EE /* OneSignalNotificationServiceExtension */;
+			targetProxy = E6C54709262E7EDC006441EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E696C74426150F2500FD72FF /* Main.storyboard */ = {
@@ -401,17 +527,21 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2510AB5AB30C0E473914CFF5 /* Pods-SocialDistanceBracelet.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8LXUHX8P5Z;
+				CODE_SIGN_ENTITLEMENTS = SocialDistanceBracelet/SocialDistanceBracelet.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 7U2DH9VLGW;
 				INFOPLIST_FILE = SocialDistanceBracelet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.AGApps.SocialDistanceBracelet;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.AGApps.SocialDistanceBracelet2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = socialDistancing;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -421,17 +551,63 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A801544F202A9A53DBBBA6B1 /* Pods-SocialDistanceBracelet.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8LXUHX8P5Z;
+				CODE_SIGN_ENTITLEMENTS = SocialDistanceBracelet/SocialDistanceBracelet.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 7U2DH9VLGW;
 				INFOPLIST_FILE = SocialDistanceBracelet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.AGApps.SocialDistanceBracelet;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.AGApps.SocialDistanceBracelet2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = socialDistancing;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E6C5470D262E7EDC006441EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0080276AD9EAB03D12832CF2 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7U2DH9VLGW;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.AGApps.SocialDistanceBracelet2.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E6C5470E262E7EDC006441EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0F922D6303E92973E284D17 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7U2DH9VLGW;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.AGApps.SocialDistanceBracelet2.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -454,6 +630,15 @@
 			buildConfigurations = (
 				E696C75026150F2900FD72FF /* Debug */,
 				E696C75126150F2900FD72FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6C5470C262E7EDC006441EE /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6C5470D262E7EDC006441EE /* Debug */,
+				E6C5470E262E7EDC006441EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
