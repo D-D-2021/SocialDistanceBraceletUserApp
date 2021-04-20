@@ -18,6 +18,7 @@
 		E6A9E8B32616A6FF00FDFE3F /* UserFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A9E8B22616A6FF00FDFE3F /* UserFormViewController.swift */; };
 		E6ABD920261BDC68006E4AE4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ABD91F261BDC68006E4AE4 /* SettingsViewController.swift */; };
 		E6ABD924261BDC84006E4AE4 /* PodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ABD923261BDC84006E4AE4 /* PodViewController.swift */; };
+		E6C546F8262E65A6006441EE /* SyncViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C546F7262E65A6006441EE /* SyncViewController.swift */; };
 		E6C6507A26253B1B00AB2F10 /* PodQRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C6507926253B1B00AB2F10 /* PodQRScannerView.swift */; };
 		E6D4468A26236CD100A20E7E /* PodMemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D4468926236CD100A20E7E /* PodMemberTableViewCell.swift */; };
 		E6D4469B2623747F00A20E7E /* QRShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D4469A2623747F00A20E7E /* QRShowView.swift */; };
@@ -39,6 +40,7 @@
 		E6A9E8B22616A6FF00FDFE3F /* UserFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFormViewController.swift; sourceTree = "<group>"; };
 		E6ABD91F261BDC68006E4AE4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E6ABD923261BDC84006E4AE4 /* PodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodViewController.swift; sourceTree = "<group>"; };
+		E6C546F7262E65A6006441EE /* SyncViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncViewController.swift; sourceTree = "<group>"; };
 		E6C6507926253B1B00AB2F10 /* PodQRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodQRScannerView.swift; sourceTree = "<group>"; };
 		E6D4468926236CD100A20E7E /* PodMemberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodMemberTableViewCell.swift; sourceTree = "<group>"; };
 		E6D4469A2623747F00A20E7E /* QRShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRShowView.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				E6A9E8B22616A6FF00FDFE3F /* UserFormViewController.swift */,
 				E6ABD91F261BDC68006E4AE4 /* SettingsViewController.swift */,
 				E6ABD923261BDC84006E4AE4 /* PodViewController.swift */,
+				E6C546F7262E65A6006441EE /* SyncViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				E696C74326150F2500FD72FF /* ViewController.swift in Sources */,
 				E6C6507A26253B1B00AB2F10 /* PodQRScannerView.swift in Sources */,
 				E6D4469B2623747F00A20E7E /* QRShowView.swift in Sources */,
+				E6C546F8262E65A6006441EE /* SyncViewController.swift in Sources */,
 				E696C73F26150F2500FD72FF /* AppDelegate.swift in Sources */,
 				E6ABD924261BDC84006E4AE4 /* PodViewController.swift in Sources */,
 				E696C74126150F2500FD72FF /* SceneDelegate.swift in Sources */,

@@ -7,6 +7,7 @@
 
 import UIKit
 import Eureka
+import ProgressHUD
 
 class UserFormViewController: FormViewController {
 
@@ -36,7 +37,7 @@ class UserFormViewController: FormViewController {
                     <<< ButtonRow(){
                         $0.title = "Submit"
                         $0.onCellSelection { (cell, button) in
-                            print("Button clicked")
+                            ProgressHUD.show("Data Saved", icon: .succeed, interaction: false)
                         }
                     }
     }
