@@ -16,6 +16,8 @@ class QRShowView: UIView {
         bgView.backgroundColor = UIColor(ciColor: CIColor.init(red: 32/255, green: 58/255, blue: 67/255))
         self.addSubview(bgView)
         
+        UserDefaults.standard.setValue("DIST:03", forKey: "USER_ID")
+        
         
         let imageView = UIImageView(frame: CGRect(x: rect.minX + 10, y: rect.minY + 10, width: rect.width - 20, height: rect.height - 20))
         imageView.image = generateQRCode(from: UserDefaults.standard.string(forKey: "USER_ID") ?? "We have an issue")

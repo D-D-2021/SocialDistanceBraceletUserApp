@@ -108,7 +108,7 @@ class BraceletActivationViewController: UIViewController, AVCaptureMetadataOutpu
         print("Next")
         
         let formView = storyboard!.instantiateViewController(identifier: "tabBarController") as! UITabBarController
-        formView.selectedIndex = 2
+        formView.selectedIndex = 3
         self.present(formView, animated: true, completion: nil)
     }
     
