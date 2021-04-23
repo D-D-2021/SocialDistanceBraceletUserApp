@@ -170,6 +170,91 @@
             </objects>
             <point key="canvasLocation" x="1941" y="805"/>
         </scene>
+        <!--Tracing-->
+        <scene sceneID="Jwx-2b-CWK">
+            <objects>
+                <viewController id="OrX-6D-BhR" customClass="TracingViewController" customModule="SocialDistanceBracelet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2QU-r9-CPo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ckg-Gx-oxZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="reportCase" id="elr-iP-u6a">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="elr-iP-u6a" id="Gqr-Wb-4CM">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gm0-1K-AP7">
+                                                    <rect key="frame" x="119.5" y="7" width="175" height="30"/>
+                                                    <state key="normal" title="Report positive covid test"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="gm0-1K-AP7" firstAttribute="centerX" secondItem="Gqr-Wb-4CM" secondAttribute="centerX" id="IWE-vX-Ip4"/>
+                                                <constraint firstItem="gm0-1K-AP7" firstAttribute="centerY" secondItem="Gqr-Wb-4CM" secondAttribute="centerY" id="v2w-kP-AYb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="exposureCell" rowHeight="60" id="8Oh-cZ-hm5" customClass="ExposureTableViewCell" customModule="SocialDistanceBracelet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="71.5" width="414" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8Oh-cZ-hm5" id="KNd-nQ-GX6">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Fw-B4-iTp">
+                                                    <rect key="frame" x="20" y="29" width="345" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxo-mg-84b">
+                                                    <rect key="frame" x="20" y="7" width="365" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="exposureLocation" destination="6Fw-B4-iTp" id="sWa-b5-2pZ"/>
+                                            <outlet property="exposureTime" destination="xxo-mg-84b" id="QpV-rn-3uj"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="OrX-6D-BhR" id="x6N-r6-KCD"/>
+                                    <outlet property="delegate" destination="OrX-6D-BhR" id="NpK-Su-IuO"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nbH-rh-NTk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ckg-Gx-oxZ" firstAttribute="trailing" secondItem="nbH-rh-NTk" secondAttribute="trailing" id="4bP-CA-1yD"/>
+                            <constraint firstItem="ckg-Gx-oxZ" firstAttribute="leading" secondItem="nbH-rh-NTk" secondAttribute="leading" id="J0O-Jt-gat"/>
+                            <constraint firstItem="ckg-Gx-oxZ" firstAttribute="bottom" secondItem="nbH-rh-NTk" secondAttribute="bottom" id="din-4d-wtz"/>
+                            <constraint firstItem="ckg-Gx-oxZ" firstAttribute="top" secondItem="2QU-r9-CPo" secondAttribute="top" id="ls1-qW-Pqp"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tracing" selectedImage="text.magnifyingglass" catalog="system" id="n9C-Li-axz">
+                        <imageReference key="image" image="text.magnifyingglass" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="tableView" destination="ckg-Gx-oxZ" id="zYW-sJ-NVQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z9L-Gw-fwV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2876.811594202899" y="804.91071428571422"/>
+        </scene>
         <!--Bracelet-->
         <scene sceneID="Xvk-4i-Ynb">
             <objects>
@@ -247,6 +332,7 @@
                     <connections>
                         <segue destination="gYs-Wm-OOD" kind="relationship" relationship="viewControllers" id="6Wh-wp-1D8"/>
                         <segue destination="NUo-al-b9O" kind="relationship" relationship="viewControllers" id="DNn-Xg-uP7"/>
+                        <segue destination="OrX-6D-BhR" kind="relationship" relationship="viewControllers" id="V7y-AM-9V0"/>
                         <segue destination="NCO-wd-Nkf" kind="relationship" relationship="viewControllers" id="dGk-17-rT3"/>
                     </connections>
                 </tabBarController>
@@ -286,6 +372,7 @@
         <image name="gear" catalog="system" width="128" height="119"/>
         <image name="person.3.fill" catalog="system" width="128" height="61"/>
         <image name="syncBackground" width="375" height="667"/>
+        <image name="text.magnifyingglass" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

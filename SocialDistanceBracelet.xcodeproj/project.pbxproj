@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0FC50DD7987839BA7D480A77 /* Pods_SocialDistanceBracelet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F8D18C3B4956930A221A17 /* Pods_SocialDistanceBracelet.framework */; };
 		930B9B10E4A192F7EF6B7FD2 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E384B35D33C9B40422BACF3 /* Pods_OneSignalNotificationServiceExtension.framework */; };
+		E68F008926323CEC00D5D79A /* TracingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68F008826323CEC00D5D79A /* TracingViewController.swift */; };
+		E68F008D2632457300D5D79A /* ReportCaseFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68F008C2632457300D5D79A /* ReportCaseFormController.swift */; };
+		E68F0091263252E700D5D79A /* ExposureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68F0090263252E700D5D79A /* ExposureTableViewCell.swift */; };
 		E696C73F26150F2500FD72FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E696C73E26150F2500FD72FF /* AppDelegate.swift */; };
 		E696C74126150F2500FD72FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E696C74026150F2500FD72FF /* SceneDelegate.swift */; };
 		E696C74326150F2500FD72FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E696C74226150F2500FD72FF /* ViewController.swift */; };
@@ -58,6 +61,9 @@
 		A801544F202A9A53DBBBA6B1 /* Pods-SocialDistanceBracelet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialDistanceBracelet.release.xcconfig"; path = "Target Support Files/Pods-SocialDistanceBracelet/Pods-SocialDistanceBracelet.release.xcconfig"; sourceTree = "<group>"; };
 		B0F922D6303E92973E284D17 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		E2F8D18C3B4956930A221A17 /* Pods_SocialDistanceBracelet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialDistanceBracelet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E68F008826323CEC00D5D79A /* TracingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracingViewController.swift; sourceTree = "<group>"; };
+		E68F008C2632457300D5D79A /* ReportCaseFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportCaseFormController.swift; sourceTree = "<group>"; };
+		E68F0090263252E700D5D79A /* ExposureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposureTableViewCell.swift; sourceTree = "<group>"; };
 		E696C73B26150F2500FD72FF /* SocialDistanceBracelet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialDistanceBracelet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E696C73E26150F2500FD72FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E696C74026150F2500FD72FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -154,6 +160,8 @@
 				E6ABD91F261BDC68006E4AE4 /* SettingsViewController.swift */,
 				E6ABD923261BDC84006E4AE4 /* PodViewController.swift */,
 				E6C546F7262E65A6006441EE /* SyncViewController.swift */,
+				E68F008826323CEC00D5D79A /* TracingViewController.swift */,
+				E68F008C2632457300D5D79A /* ReportCaseFormController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -173,6 +181,7 @@
 				E6D4468926236CD100A20E7E /* PodMemberTableViewCell.swift */,
 				E6D4469A2623747F00A20E7E /* QRShowView.swift */,
 				E6C6507926253B1B00AB2F10 /* PodQRScannerView.swift */,
+				E68F0090263252E700D5D79A /* ExposureTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -355,15 +364,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E68F0091263252E700D5D79A /* ExposureTableViewCell.swift in Sources */,
 				E69B33B926168E9400E526D0 /* BraceletActivationViewController.swift in Sources */,
 				E696C74326150F2500FD72FF /* ViewController.swift in Sources */,
 				E6C6507A26253B1B00AB2F10 /* PodQRScannerView.swift in Sources */,
 				E6D4469B2623747F00A20E7E /* QRShowView.swift in Sources */,
+				E68F008D2632457300D5D79A /* ReportCaseFormController.swift in Sources */,
 				E6C546F8262E65A6006441EE /* SyncViewController.swift in Sources */,
 				E696C73F26150F2500FD72FF /* AppDelegate.swift in Sources */,
 				E6ABD924261BDC84006E4AE4 /* PodViewController.swift in Sources */,
 				E696C74126150F2500FD72FF /* SceneDelegate.swift in Sources */,
 				E6D4468A26236CD100A20E7E /* PodMemberTableViewCell.swift in Sources */,
+				E68F008926323CEC00D5D79A /* TracingViewController.swift in Sources */,
 				E6A9E8B32616A6FF00FDFE3F /* UserFormViewController.swift in Sources */,
 				E6ABD920261BDC68006E4AE4 /* SettingsViewController.swift in Sources */,
 			);
